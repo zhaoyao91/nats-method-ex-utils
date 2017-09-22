@@ -43,6 +43,17 @@ methodEx.define('some.method', validateInput(
 ))
 ```
 
+#### extractData
+
+Extract data from response. If `response.ok` is false, error will be thrown.
+
+```ecmascript 6
+const {extractData} = require('nats-method-ex-utils')
+
+const response = await methodEx.call('xxx')
+const data = extractData(response)
+```
+
 ## License
 
 MIT

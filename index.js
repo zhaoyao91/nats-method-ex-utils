@@ -1,5 +1,7 @@
-const joiInputValidator = require('./lib/joi-input-validator')
+const joiInputValidator = require('./lib/joi_input_validator')
+const extractData = require('./lib/extract_data')
 
 module.exports = {
-  joiInputValidator
+  joiInputValidator,
+  extractData,
 }
